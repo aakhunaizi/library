@@ -1,17 +1,15 @@
-const Tag = ({book}) => {
+const BookTag = ({ book }) => {
   let status = "";
-  (book.available)? status = "Available" : status = "Borrowed";
+  book.available ? (status = "Available") : (status = "Borrowed");
 
   return (
     <div className="col-sm-6 mb-4">
       <div className="card h-100">
-        <img
-          className="card-img-top"
-          src="https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg"
-          alt="Shrek"
-        />
+        <img className="card-img-top" src={book.image} alt={book.title} />
         <div className="card-body">
-          <h5 className="card-title" style={{fontWeight: "bold"}}>{book.title}</h5>
+          <h5 className="card-title" style={{ fontWeight: "bold" }}>
+            {book.title}
+          </h5>
           <p className="card-text">{book.genre.join(", ")}</p>
         </div>
         <ul className="list-group list-group-flush">
@@ -27,4 +25,4 @@ const Tag = ({book}) => {
   );
 };
 
-export default Tag;
+export default BookTag;
