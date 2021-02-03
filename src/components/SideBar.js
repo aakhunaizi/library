@@ -37,6 +37,10 @@ const SideBar = () => {
             </li>
             
             <hr class="sidebar-divider my-0"></hr>
+
+            {/* <div className="text-center d-none d-md-inline">
+                <button className="rounded-circle border-0" id="sidebarToggle"></button>
+            </div> */}
         </ul>
     );
 };
