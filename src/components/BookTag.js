@@ -5,8 +5,12 @@ const BookTag = ({ book }) => {
   return (
     <div className="col-sm-6 mb-4">
       <div className="card h-100">
-        <img className="card-img-top" src={book.image} 
-        alt={book.title} style={{height: "20em"}}/>
+        <img
+          className="card-img-top"
+          src={book.image}
+          alt={book.title}
+          style={{ height: "20em" }}
+        />
         <div className="card-body">
           <h5 className="card-title" style={{ fontWeight: "bold" }}>
             {book.title}
@@ -18,7 +22,7 @@ const BookTag = ({ book }) => {
         </ul>
         <div className="card-body">
           <a href="#" className="btn btn-primary">
-            More Details
+            View Details
           </a>
         </div>
       </div>

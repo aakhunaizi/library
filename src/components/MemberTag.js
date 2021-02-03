@@ -6,7 +6,7 @@ const MemberTag = ({ member }) => {
           className="card-img-top"
           src={member.image}
           alt={member.name}
-          style={{height: "15em"}}
+          style={{ height: "15em" }}
         />
         <div className="card-body">
           <h5 className="card-title" style={{ fontWeight: "bold" }}>
@@ -19,7 +19,7 @@ const MemberTag = ({ member }) => {
         </ul>
         <div className="card-body">
           <a href="#" className="btn btn-primary">
-            More Details
+            View Profile
           </a>
         </div>
       </div>
