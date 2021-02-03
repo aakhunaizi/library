@@ -10,6 +10,8 @@ import "./css/sb-admin-2.min.css";
 import SideBar from "./components/SideBar";
 import BooksList from "./components/BooksList";
 import MembersList from "./components/MembersList";
+import MemberDetail from "./components/MemberDetail";
+import BookDetail from "./components/BookDetail";
 
 function App() {
   return (
@@ -19,6 +21,12 @@ function App() {
         <div id="content-wrapper" className="d-flex flex-column">
           <div id="content">
             <Switch>
+              <Route path="/members/:memberSlug">
+                <MemberDetail />
+              </Route>
+              <Route path="/books/:bookSlug">
+                <BookDetail />
+              </Route>
               <Route path="/books">
                 <BooksList />
               </Route>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const BookTag = ({ book }) => {
   let status = "";
   book.available ? (status = "Available") : (status = "Borrowed");
@@ -5,12 +7,14 @@ const BookTag = ({ book }) => {
   return (
     <div className="col-sm-6 mb-4">
       <div className="card h-100">
-        <img
-          className="card-img-top"
-          src={book.image}
-          alt={book.title}
-          style={{ height: "20em" }}
-        />
+        <Link to={`/books/${book.slug}`}>
+          <img
+            className="card-img-top"
+            src={book.image}
+            alt={book.title}
+            style={{ height: "20em" }}
+          />
+        </Link>
         <div className="card-body">
           <h5 className="card-title" style={{ fontWeight: "bold" }}>
             {book.title}
@@ -21,9 +25,9 @@ const BookTag = ({ book }) => {
           <li className="list-group-item">{status}</li>
         </ul>
         <div className="card-body">
-          <a href="#" className="btn btn-primary">
-            View Details
-          </a>
+          <Link to={`/books/${book.slug}`}>
+            <button className="btn btn-primary">View Details</button>
+          </Link>
         </div>
       </div>
     </div>
