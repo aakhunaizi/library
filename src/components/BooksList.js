@@ -3,7 +3,6 @@ import BookTag from "./BookTag";
 // Components
 import NavBar from "./NavBar";
 
-
 const BooksList = () => {
   const books = useSelector((state) => state.books);
 
@@ -11,7 +10,7 @@ const BooksList = () => {
 
   return (
     <>
-      <NavBar formButton={"Add Book"}/>
+      <NavBar formButton={"Add Book"} form={"books"} />
       <div class="container-fluid">
         {/* Page Heading */}
         <div className="d-sm-flex align-items-center justify-content-between mb-4">
