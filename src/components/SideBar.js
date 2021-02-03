@@ -31,7 +31,6 @@ const SideBar = () => {
         <li className="nav-item">
           <a
             className="nav-link collapsed"
-            href="#"
             data-toggle="collapse"
             data-target="#collapseTwo"
             aria-expanded="true"
@@ -45,13 +44,12 @@ const SideBar = () => {
         </li>
       </Link>
 
-      <hr class="sidebar-divider my-0"></hr>
+      <hr className="sidebar-divider my-0"></hr>
 
       <Link to="/members">
         <li className="nav-item">
           <a
             className="nav-link collapsed"
-            href="#"
             data-toggle="collapse"
             data-target="#collapseTwo"
             aria-expanded="true"
@@ -65,7 +63,7 @@ const SideBar = () => {
         </li>
       </Link>
 
-      <hr class="sidebar-divider my-0"></hr>
+      <hr className="sidebar-divider my-0"></hr>
 
       {/* <div className="text-center d-none d-md-inline">
                 <button className="rounded-circle border-0" id="sidebarToggle"></button>

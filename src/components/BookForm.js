@@ -1,19 +1,43 @@
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addBook} from "../store/actions";
+
 import { StyledForm } from "../styles";
+
 const BookForm = () => {
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  const [book, setBook] = useState({
+        author: "",
+        title: "",
+        genre: "",
+        image: "",
+    }
+  );
+
+  const handleChange = (event) => setBook({...book, [event.target.name]: event.target.value});
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    dispatch(addBook(book));
+    history.push("/books");
+  };
+  
   return (
     <>
-      <StyledForm>
+      <StyledForm onSubmit={handleSubmit}>
         <h1>Add Book</h1>
         <div className="form-group">
           <label>Title</label>
           <input
             type="text"
-            name="bookTitle"
+            name="title"
             placeholder="Enter book title..."
             className="form-control"
-            //   value={product.name}
-            //   onChange={handleChange}
+              value={book.title}
+              onChange={handleChange}
           />
         </div>
         <div className="form-group">
@@ -23,8 +47,8 @@ const BookForm = () => {
             name="author"
             placeholder="Enter book author..."
             className="form-control"
-            // value={product.price}
-            // onChange={handleChange}
+            value={book.author}
+            onChange={handleChange}
           />
         </div>
         <div className="form-group">
@@ -34,8 +58,8 @@ const BookForm = () => {
             name="genre"
             placeholder="Enter book genre..."
             className="form-control"
-            // value={product.price}
-            // onChange={handleChange}
+            value={book.genre}
+            onChange={handleChange}
           />
         </div>
 
@@ -46,13 +70,13 @@ const BookForm = () => {
             name="image"
             placeholder="Enter book image url..."
             className="form-control"
-            //   value={product.image}
-            //   onChange={handleChange}
+              value={book.image}
+              onChange={handleChange}
           />
         </div>
-        <a className="btn btn-outline-success m-2">Add</a>
+        <button className="btn btn-outline-success m-2">Add</button>
         <Link to="/books">
-          <a className="btn btn-outline-primary">Back</a>
+          <button className="btn btn-outline-primary">Back</button>
         </Link>
       </StyledForm>
     </>
