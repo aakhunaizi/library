@@ -4,8 +4,9 @@ const MemberTag = ({ member }) => {
       <div className="card h-100">
         <img
           className="card-img-top"
-          src="https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg"
-          alt="Shrek"
+          src={member.image}
+          alt={member.name}
+          style={{height: "15em"}}
         />
         <div className="card-body">
           <h5 className="card-title" style={{ fontWeight: "bold" }}>

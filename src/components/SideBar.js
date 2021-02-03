@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+
 // Icons
 import { FaBook } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
 
 const SideBar = () => {
+  
   return (
     <ul
       className=" navbar-nav bg-gradient-primary sidebar sidebar-dark accordion "
@@ -22,40 +25,43 @@ const SideBar = () => {
       <hr className="sidebar-divider my-0"></hr>
 
       {/* <div className="sidebar-heading">Interface</div> */}
-
-      <li className="nav-item">
-        <a
-          className="nav-link collapsed"
-          href="#"
-          data-toggle="collapse"
-          data-target="#collapseTwo"
-          aria-expanded="true"
-          aria-controls="collapseTwo"
-        >
-          <i>
-            <FaBook />
-          </i>
-          <span style={{ marginLeft: "10px" }}>Books</span>
-        </a>
-      </li>
+      <Link to="/books">
+          <li className="nav-item">
+            <a
+              className="nav-link collapsed"
+              href="#"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+              >
+              <i>
+                <FaBook />
+              </i>
+              <span style={{ marginLeft: "10px" }}>Books</span>
+            </a>
+          </li>
+      </Link>
 
       <hr class="sidebar-divider my-0"></hr>
 
-      <li className="nav-item">
-        <a
-          className="nav-link collapsed"
-          href="#"
-          data-toggle="collapse"
-          data-target="#collapseTwo"
-          aria-expanded="true"
-          aria-controls="collapseTwo"
-        >
-          <i>
-            <BsFillPersonFill size={18} />
-          </i>
-          <span style={{ marginLeft: "7px" }}>Members</span>
-        </a>
-      </li>
+      <Link to="/members">
+        <li className="nav-item">
+          <a
+            className="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+            >
+            <i>
+              <BsFillPersonFill size={18} />
+            </i>
+            <span style={{ marginLeft: "7px" }}>Members</span>
+          </a>
+        </li>
+      </Link>
 
       <hr class="sidebar-divider my-0"></hr>
 

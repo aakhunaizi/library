@@ -5,7 +5,8 @@ const BookTag = ({ book }) => {
   return (
     <div className="col-sm-6 mb-4">
       <div className="card h-100">
-        <img className="card-img-top" src={book.image} alt={book.title} />
+        <img className="card-img-top" src={book.image} 
+        alt={book.title} style={{height: "20em"}}/>
         <div className="card-body">
           <h5 className="card-title" style={{ fontWeight: "bold" }}>
             {book.title}

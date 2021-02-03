@@ -5,8 +5,7 @@ const books = [
     title: "12 Rules for Life: An Antidote to Chaos",
     slug: "12-rules-for-life:-an-antidote-to-chaos",
     genre: ["Self-Help"],
-    image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+    image: "https://bendox.cz/wp-content/uploads/2020/09/image_23980_19_v1.jpg",
     available: false,
     borrowedBy: [3],
   },
@@ -17,7 +16,7 @@ const books = [
     slug: "dark-matter",
     genre: ["Sci-Fi", "Thriller"],
     image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+      "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1472119680l/27833670._SY475_.jpg",
     available: false,
     borrowedBy: [3],
   },
@@ -27,8 +26,7 @@ const books = [
     title: "Mr. Penumbra's 24-Hour Bookstore",
     slug: "mr.-penumbra's-24-hour-bookstore",
     genre: ["Suspense", "Fantasy"],
-    image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+    image: "https://images-na.ssl-images-amazon.com/images/I/71UhnbUOwzL.jpg",
     available: false,
     borrowedBy: [1, 3, 5, 1],
   },
@@ -38,8 +36,7 @@ const books = [
     title: "When Breath Becomes Air",
     slug: "when-breath-becomes-air",
     genre: ["Biography"],
-    image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+    image: "https://images-na.ssl-images-amazon.com/images/I/717KRq4xxxL.jpg",
     available: true,
     borrowedBy: [2, 5],
   },
@@ -49,8 +46,7 @@ const books = [
     title: "The Lean Startup",
     slug: "the-lean-startup",
     genre: ["Business", "Entrepreneurship"],
-    image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+    image: "https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg",
     available: false,
     borrowedBy: [4, 1, 2],
   },
@@ -60,8 +56,7 @@ const books = [
     title: "A Storm of Swords",
     slug: "a-storm-of-swords",
     genre: ["Fantasy"],
-    image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+    image: "https://i.harperapps.com/hcanz/covers/9780008412760/y648.jpg",
     available: true,
     borrowedBy: [],
   },
@@ -71,8 +66,7 @@ const books = [
     title: "Six of Crows",
     slug: "six-of-crows",
     genre: ["Fantasy"],
-    image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+    image: "https://m.media-amazon.com/images/I/51J5zgGCRPL.jpg",
     available: false,
     borrowedBy: [4, 3, 2, 1, 5],
   },
@@ -82,8 +76,7 @@ const books = [
     title: "Curtain: Poirot's Last Case",
     slug: "curtain:-poirot's-last-case",
     genre: ["Crime", "Mystery"],
-    image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+    image: "https://images-na.ssl-images-amazon.com/images/I/813H-43Z8-L.jpg",
     available: false,
     borrowedBy: [3, 5],
   },
@@ -94,7 +87,7 @@ const books = [
     slug: "the-forty-rules-of-love",
     genre: ["Fiction"],
     image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+      "https://exlibris.azureedge.net/covers/9780/2419/7293/9/9780241972939xxl.jpg",
     available: false,
     borrowedBy: [5, 1],
   },
@@ -104,8 +97,7 @@ const books = [
     title: "The Language of Thorns: Midnight Tales and Dangerous Magic",
     slug: "the-language-of-thorns:-midnight-tales-and-dangerous-magic",
     genre: ["Fantasy"],
-    image:
-      "https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg",
+    image: "https://images-na.ssl-images-amazon.com/images/I/71UTzR3TitL.jpg",
     available: false,
     borrowedBy: [5],
   },
