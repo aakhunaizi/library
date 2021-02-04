@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 const MemberTag = ({ member }) => {
+  const membership = member.membership[0].toUpperCase() + member.membership.substring(1);
+
   return (
     <div className="col-sm-6 mb-4">
       <div className="card h-100">
@@ -19,7 +21,7 @@ const MemberTag = ({ member }) => {
         </div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
-            {member.membership.toUpperCase()} MEMBER
+            {membership} Member
           </li>
         </ul>
         <div className="card-body">

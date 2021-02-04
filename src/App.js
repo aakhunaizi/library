@@ -1,6 +1,4 @@
 import { Route, Switch } from "react-router";
-import MemberForm from "./components/MemberForm";
-import BookForm from "./components/BookForm";
 
 // Styles
 import "./css/sb-admin-2.css";
@@ -12,6 +10,8 @@ import BooksList from "./components/BooksList";
 import MembersList from "./components/MembersList";
 import MemberDetail from "./components/MemberDetail";
 import BookDetail from "./components/BookDetail";
+import MemberForm from "./components/MemberForm";
+import BookForm from "./components/BookForm";
 
 function App() {
   return (

@@ -16,7 +16,9 @@ const reducer = (state = initialState, action) => {
             const fullName = [newMember["firstName"], newMember["lastName"]];
             newMember.id = state.members[state.members.length - 1].id++;
             newMember.currentlyBorrowedBooks = [];
+            newMember.requestedBooks = [];
             newMember.slug = slugify(fullName.join(" "), {lower: true})
+            newMember.membership = newMember.membership.toLowerCase();
             return {
                 ...state, 
                 members: [...state.members, newMember]
