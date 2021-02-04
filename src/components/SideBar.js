@@ -11,18 +11,17 @@ const SideBar = () => {
       className=" navbar-nav bg-gradient-primary sidebar sidebar-dark accordion "
       id="accordionSidebar"
     >
-      <a
-        className="sidebar-brand d-flex align-items-center justify-content-center"
-        href="index.html"
-      >
-        <div className="sidebar-brand-icon ">
-          <i>
-            <IoLibrary />
-          </i>
-        </div>
-        <div className="sidebar-brand-text mx-3">Library</div>
-        {/* <sup>2</sup> */}
-      </a>
+      <Link to={"/"}>
+        <a className="sidebar-brand d-flex align-items-center justify-content-center">
+          <div className="sidebar-brand-icon ">
+            <i>
+              <IoLibrary />
+            </i>
+          </div>
+          <div className="sidebar-brand-text mx-3">Library</div>
+          {/* <sup>2</sup> */}
+        </a>
+      </Link>
 
       <hr className="sidebar-divider my-0"></hr>
 
