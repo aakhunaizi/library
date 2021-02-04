@@ -37,7 +37,7 @@ const MemberDetail = () => {
 
   return (
     <>
-      <div class="container-fluid">
+      <div className="container-fluid">
         <div className="d-sm-flex align-items-center justify-content-between mb-4" style={{marginTop : "2%"}}>
             <h1 className="h3 mb-0 text-gray-800" style={{fontWeight : "bold"}}>{fullName}</h1>
         </div>

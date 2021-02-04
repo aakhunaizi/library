@@ -8,6 +8,7 @@ const books = [
     image: "https://bendox.cz/wp-content/uploads/2020/09/image_23980_19_v1.jpg",
     available: false,
     borrowedBy: [3],
+    requestedBy: [],
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const books = [
       "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1472119680l/27833670._SY475_.jpg",
     available: false,
     borrowedBy: [3],
+    requestedBy: [],
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const books = [
     image: "https://images-na.ssl-images-amazon.com/images/I/71UhnbUOwzL.jpg",
     available: false,
     borrowedBy: [1, 3, 5, 1],
+    requestedBy: [],
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const books = [
     image: "https://images-na.ssl-images-amazon.com/images/I/717KRq4xxxL.jpg",
     available: true,
     borrowedBy: [2, 5],
+    requestedBy: [],
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const books = [
     image: "https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg",
     available: false,
     borrowedBy: [4, 1, 2],
+    requestedBy: [],
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ const books = [
     image: "https://i.harperapps.com/hcanz/covers/9780008412760/y648.jpg",
     available: true,
     borrowedBy: [],
+    requestedBy: [],
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ const books = [
     image: "https://m.media-amazon.com/images/I/51J5zgGCRPL.jpg",
     available: false,
     borrowedBy: [4, 3, 2, 1, 5],
+    requestedBy: [],
   },
   {
     id: 8,
@@ -79,6 +86,7 @@ const books = [
     image: "https://images-na.ssl-images-amazon.com/images/I/813H-43Z8-L.jpg",
     available: false,
     borrowedBy: [3, 5],
+    requestedBy: [],
   },
   {
     id: 9,
@@ -90,6 +98,7 @@ const books = [
       "https://exlibris.azureedge.net/covers/9780/2419/7293/9/9780241972939xxl.jpg",
     available: false,
     borrowedBy: [5, 1],
+    requestedBy: [],
   },
   {
     id: 10,
@@ -100,6 +109,7 @@ const books = [
     image: "https://images-na.ssl-images-amazon.com/images/I/71UTzR3TitL.jpg",
     available: false,
     borrowedBy: [5],
+    requestedBy: [],
   },
 ];
 
