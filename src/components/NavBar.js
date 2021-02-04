@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const NavBar = ({ formButton, form }) => {
+const NavBar = ({ formButton, form, setQuery }) => {
   const formCheck = form === "books" ? "/addbook" : "/addmember";
 
   return (
@@ -9,6 +9,7 @@ const NavBar = ({ formButton, form }) => {
       <form className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
         <div className="input-group">
           <input
+            onChange={(event) => setQuery(event.target.value)}
             type="text"
             className="form-control bg-light border-0 small"
             placeholder="Search for..."

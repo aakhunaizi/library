@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { useState } from "react";
 import BookTag from "./BookTag";
 // Components
 import NavBar from "./NavBar";
@@ -6,11 +7,26 @@ import NavBar from "./NavBar";
 const BooksList = () => {
   const books = useSelector((state) => state.books);
 
-  const booksList = books.map((book) => <BookTag book={book} key={book.id} />);
+  const bookGenre = books.map((book) =>
+    book.genre.map((genre) => genre.toLowerCase())
+  );
+
+  console.log(bookGenre);
+
+  const [query, setQuery] = useState("");
+  const booksList = books
+    .filter(
+      (book) =>
+        book.title.toLowerCase().includes(query.toLowerCase()) ||
+        book.genre
+          .map((genre) => genre.toLowerCase())
+          .includes(query.toLowerCase())
+    )
+    .map((book) => <BookTag book={book} key={book.id} />);
 
   return (
     <>
-      <NavBar formButton={"Add Book"} form={"books"} />
+      <NavBar formButton={"Add Book"} form={"books"} setQuery={setQuery} />
       <div class="container-fluid">
         {/* Page Heading */}
         <div className="d-sm-flex align-items-center justify-content-between mb-4">
