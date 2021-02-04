@@ -4,6 +4,7 @@ import { returnBook } from "../store/actions";
 
 const BorrowedBook = ({ book }) => {
   const dispatch = useDispatch();
+
   return (
     <div className="card mb-3 py-10 border-bottom-dark">
       <div className="card-body">
@@ -13,10 +14,9 @@ const BorrowedBook = ({ book }) => {
         <div style={{ float: "right" }}>
           <button
             // onClick={dispatch(returnBook(book))}
-            className="fas btn btn-outline-danger"
+            className="fas btn btn-outline-primary"
             style={{ fontSize: "12px" }}
-          >
-            Return
+          > Return
           </button>
         </div>
       </div>

@@ -19,8 +19,9 @@ const BooksList = () => {
       (book) =>
         book.title.toLowerCase().includes(query.toLowerCase()) ||
         book.genre
-          .map((genre) => genre.toLowerCase())
-          .includes(query.toLowerCase())
+          .map((genre) => (genre.toLowerCase())
+          .includes(query.toLowerCase()))
+          .includes(true)
     )
     .map((book) => <BookTag book={book} key={book.id} />);
 

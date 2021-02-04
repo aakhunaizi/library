@@ -17,7 +17,6 @@ const MemberTag = ({ member }) => {
           <h5 className="card-title" style={{ fontWeight: "bold" }}>
             {member.firstName} {member.lastName}
           </h5>
-          {/* <p className="card-text">{book.genre.join(", ")}</p> */}
         </div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">

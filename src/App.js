@@ -12,6 +12,9 @@ import MemberDetail from "./components/MemberDetail";
 import BookDetail from "./components/BookDetail";
 import MemberForm from "./components/MemberForm";
 import BookForm from "./components/BookForm";
+import Home from "./components/Home";
+
+
 
 function App() {
   return (
@@ -22,22 +25,25 @@ function App() {
           <div id="content">
             <Switch>
               <Route path="/members/:memberSlug">
-                <MemberDetail />
+                <MemberDetail/>
               </Route>
               <Route path="/books/:bookSlug">
-                <BookDetail />
+                <BookDetail/>
               </Route>
               <Route path="/books">
-                <BooksList />
+                <BooksList/>
               </Route>
               <Route path="/members">
-                <MembersList />
+                <MembersList/>
               </Route>
               <Route path="/addmember">
-                <MemberForm />
+                <MemberForm/>
               </Route>
               <Route path="/addbook">
-                <BookForm />
+                <BookForm/>
+              </Route>
+              <Route exact path="/">
+                <Home/>
               </Route>
             </Switch>
           </div>

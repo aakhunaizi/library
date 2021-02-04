@@ -36,20 +36,25 @@ const reducer = (state = initialState, action) => {
       };
 
     case "RETURN_BOOK":
-      const { newReturn } = action.payload;
-      newReturn.available = false;
-      const returnMember = state.members.map((member) => {
-        if (member.currentlyBorrowedBooks.includes(newReturn.id)) {
-          return member.currentlyBorrowedBooks.filter(
-            (book) => book !== newReturn.id
-          );
-        } else return member;
-      });
-
+      // const { newReturn } = action.payload;
+      // newReturn["available"] = false;
+      // const returnMember = state.members[newReturn.borrowedBy.toString()];
+  
+      // console.log(returnMember);
+      // const returnMember = state.members.map((member) => {
+      //   if(member.currentlyBorrowedBooks.includes(newReturn.id)) {
+      //     member.currentlyBorrowedBooks = member.currentlyBorrowedBooks.filter(
+      //       (book) => book !== newReturn.id
+      //     );
+      //     return member;
+      //   }else{
+      //     return member;
+      //   }
+      // });
       return {
-        ...state,
-        books: [...state.books, newReturn],
-        members: [...state.members, returnMember],
+        // ...state,
+        // books: [...state.books, newReturn],
+        // members: [...state.members, returnMember],
       };
     default:
       return state;

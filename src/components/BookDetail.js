@@ -17,7 +17,13 @@ const BookDetail = () => {
   const book = books.find((book) => book.slug === bookSlug);
 
   let status = "";
+  let action = "";
   (book.available)? status = "Available" : status = "Borrowed";
+  (book.available)? action = "Lend" : action = "Request";
+
+
+
+
 
   const membersHistory = members.filter(member => book.borrowedBy.includes(member.id));
   const bookHistory = membersHistory.map(member => 
@@ -109,7 +115,7 @@ const BookDetail = () => {
                 <div className="card shadow mb-4">
                     <div
                         className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 className="m-0 font-weight-bold text-primary">Hellooo</h6>
+                        <h6 className="m-0 font-weight-bold text-primary">{action} Book</h6>
                     </div>
                     <div className="card-body" style={{height: "30em"}}>
                             <img
@@ -117,6 +123,7 @@ const BookDetail = () => {
                                 alt={book.title}
                                 style={{height: "24em", width:"17.5em"}}
                             />
+                            <button className="btn btn-primary" style={{marginTop:"10px", marginLeft:"80px"}}>{action} Book</button>
                         <div className="mt-4 text-center small">
                             <span className="mr-2"><i></i></span>
                         </div>

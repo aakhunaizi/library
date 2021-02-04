@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { useParams, Redirect, Link } from "react-router-dom";
+import { useParams, Redirect} from "react-router-dom";
 import { FaAward } from "react-icons/fa";
 import { GiSecretBook, GiEvilBook } from "react-icons/gi";
 import { IoWarning } from "react-icons/io5";
@@ -143,7 +143,7 @@ const MemberDetail = () => {
             <div className="card shadow mb-4">
               <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 className="m-0 font-weight-bold text-primary">
-                  The face behind the name
+                  Lend {member.firstName} a new book
                 </h6>
               </div>
               <div className="card-body" style={{ height: "30em" }}>
@@ -158,6 +158,7 @@ const MemberDetail = () => {
                     border: "5px solid #5a5c69",
                   }}
                 />
+                <button className="btn btn-primary" style={{marginTop:"20px", marginLeft:"80px"}}>Lend Book</button>
                 <div className="mt-4 text-center small">
                   <span className="mr-2">
                     <i></i>
